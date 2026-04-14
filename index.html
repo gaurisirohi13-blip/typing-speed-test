@@ -14,10 +14,25 @@
     <textarea id="input" placeholder="Start typing here..." disabled></textarea>
 
     <br>
-    <button onclick="startTest()">Start</button>
-    <p id="timer">Time: 0 sec</p>
 
-    <h3 id="result"></h3>
+    <select id="timeSelect">
+        <option value="30">30 sec</option>
+        <option value="60">60 sec</option>
+        <option value="120">120 sec</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="startTest()">Start</button>
+
+    <p id="timer">Time: 0 sec</p>
+</div>
+
+<!-- ✅ OUTSIDE container -->
+<div id="finalResult" style="display:none; text-align:center; margin-top:50px;">
+    <h1>Test Completed 🎉</h1>
+    <p id="finalText"></p>
+    <button onclick="location.reload()">Restart</button>
 </div>
 
 <script src="script.js"></script>
